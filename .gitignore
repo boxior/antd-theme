@@ -64,3 +64,6 @@ lib
 # misc
 .DS_Store
 example/
+
+
+.idea

@@ -1,0 +1,14 @@
+@import "../../../styles/index";
+
+.button {
+    &.ant-btn {
+        @extend %text-1;
+        color: $coolBlue;
+        font-weight: 500;
+    }
+
+    &--primary.ant-btn {
+        color: $white;
+        border: none;
+    }
+}

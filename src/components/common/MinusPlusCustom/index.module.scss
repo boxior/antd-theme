@@ -1,0 +1,49 @@
+@import "../../../styles/index";
+
+%button {
+    width: 38px;
+    background-color: $formBackground;
+    color: $charcoalGrey;
+    font-size: 30px;
+    padding: 0;
+
+    .icon-wrap {
+        @extend %icon-wrap;
+        margin: 0 auto;
+    }
+
+    &:hover {
+        .icon {
+            transition: $transition;
+            fill: $coolBlue;
+        }
+    }
+}
+
+.minus-plus {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 40px;
+
+    :global {
+        .ant-input {
+            width: 50px;
+            border-radius: 0;
+            text-align: center;
+        }
+    }
+}
+
+.button-left.ant-btn {
+    @extend %button;
+    border-radius: 4px 0 0 4px;
+}
+
+.button-right.ant-btn {
+    @extend %button;
+    border-radius: 0 4px 4px 0;
+}
+
+.input {
+}

@@ -1,57 +1,71 @@
 {
-  "name": "webpack-library-starter-kit",
-  "version": "1.0.0",
-  "description": "Webpack starter kit for creating libraries (Input: ES6, Output: UMD, CommonJS)",
-  "main": "lib/Library.js",
-  "files": [
-    "src/",
-    "dist/",
-    "lib/"
-  ],
-  "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --require @babel/register --colors ./test/*.spec.js",
-    "coverage": "nyc --reporter=text --reporter=lcov npm test",
-    "lint": "eslint src/**/*.js",
-    "build:umdmin": "webpack --mode=production --output-library-target=umd",
-    "build:umd": "webpack --mode=development --output-library-target=umd",
-    "build:commonjs": "webpack --mode=development --output-library-target=commonjs2",
-    "build": "npm-run-all build:*",
-    "dev:umd": "webpack --progress --colors --watch --mode=development --output-library-target=umd",
-    "dev:commonjs": "webpack --progress --colors --watch --mode=development --output-library-target=commonjs2",
-    "dev": "npm-run-all --parallel dev:*",
-    "clean": "rimraf dist lib coverage",
-    "prepare": "npm-run-all clean lint test build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/georapbox/webpack-library-starter-kit.git"
-  },
-  "keywords": [],
-  "author": "George Raptis <georapbox@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/georapbox/webpack-library-starter-kit/issues"
-  },
-  "homepage": "https://github.com/georapbox/webpack-library-starter-kit#readme",
-  "devDependencies": {
-    "@babel/core": "~7.6.0",
-    "@babel/plugin-proposal-object-rest-spread": "~7.5.5",
-    "@babel/preset-env": "~7.6.0",
-    "@babel/register": "~7.6.0",
-    "babel-loader": "~8.0.6",
-    "chai": "~4.2.0",
-    "cross-env": "~6.0.0",
-    "eslint": "~6.4.0",
-    "eslint-loader": "~3.0.0",
-    "mocha": "~6.2.0",
-    "npm-run-all": "~4.1.5",
-    "nyc": "~14.1.1",
-    "rimraf": "~3.0.0",
-    "sinon": "~7.4.2",
-    "sinon-chai": "~3.3.0",
-    "webpack": "~4.40.2",
-    "webpack-cli": "~3.3.9",
-    "yargs": "~14.1.0"
-  },
-  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead"
+    "name": "lean-theme-2",
+    "version": "0.1.0",
+    "description": "Lean theme, type 2",
+    "main": "lib/Library.js",
+    "files": [
+        "src/",
+        "dist/",
+        "lib/"
+    ],
+    "scripts": {
+        "test": "cross-env NODE_ENV=test mocha --require @babel/register --colors ./test/*.spec.js",
+        "coverage": "nyc --reporter=text --reporter=lcov npm test",
+        "lint": "eslint src/**/*.js",
+        "build:umdmin": "webpack --mode=production --output-library-target=umd",
+        "build:umd": "webpack --mode=development --output-library-target=umd",
+        "build:commonjs": "webpack --mode=development --output-library-target=commonjs2",
+        "build": "npm-run-all build:*",
+        "dev:umd": "webpack --progress --colors --watch --mode=development --output-library-target=umd",
+        "dev:commonjs": "webpack --progress --colors --watch --mode=development --output-library-target=commonjs2",
+        "dev": "npm-run-all --parallel dev:*",
+        "clean": "rimraf dist lib coverage",
+        "prepare": "npm-run-all clean lint test build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/boxior/antd-theme.git"
+    },
+    "keywords": [],
+    "author": "Serhii Lyzun <slyzun@intellias.com>",
+    "license": "MIT",
+    "homepage": "https://github.com/boxior/antd-theme.git#readme",
+    "devDependencies": {
+        "@babel/core": "~7.6.0",
+        "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+        "@babel/preset-env": "^7.6.2",
+        "@babel/register": "~7.6.0",
+        "babel-loader": "^8.0.6",
+        "chai": "~4.2.0",
+        "cross-env": "~6.0.0",
+        "eslint": "~6.4.0",
+        "eslint-loader": "~3.0.0",
+        "mocha": "~6.2.0",
+        "npm-run-all": "~4.1.5",
+        "nyc": "~14.1.1",
+        "rimraf": "~3.0.0",
+        "sinon": "~7.4.2",
+        "sinon-chai": "~3.3.0",
+        "webpack": "~4.40.2",
+        "webpack-cli": "~3.3.9",
+        "yargs": "~14.1.0"
+    },
+    "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
+    "dependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.5.5",
+        "@babel/preset-react": "^7.0.0",
+        "antd": "^3.23.4",
+        "classnames": "^2.2.6",
+        "css-loader": "^3.2.0",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "less": "^3.10.3",
+        "less-loader": "^5.0.0",
+        "mini-css-extract-plugin": "^0.8.0",
+        "node-sass": "^4.12.0",
+        "prop-types": "^15.7.2",
+        "react": "^16.10.0",
+        "react-dom": "^16.10.0",
+        "sass-loader": "^8.0.0",
+        "style-loader": "^1.0.0"
+    }
 }

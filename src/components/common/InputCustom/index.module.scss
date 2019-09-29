@@ -1,0 +1,11 @@
+@import '../../../styles/index';
+
+.input {
+    @extend %text-2;
+    text-align: right;
+
+    &::placeholder {
+        @extend %text-2;
+        color: $inputPlaceholder;
+    }
+}

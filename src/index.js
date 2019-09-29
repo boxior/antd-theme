@@ -1,11 +1,10 @@
-class Library {
-  constructor() {
-    this._name = 'Library';
-  }
+import 'antd/dist/antd.less';
+import ButtonCustom from "./components/common/ButtonCustom";
+import InputCustom from "./components/common/InputCustom";
+import MinusPlusCustom from "./components/common/MinusPlusCustom";
 
-  name() {
-    return this._name;
-  }
-}
-
-export default Library;
+export default {
+    Button: ButtonCustom,
+    Input: InputCustom,
+    MinusPlus: MinusPlusCustom
+};

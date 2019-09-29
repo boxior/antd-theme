@@ -1,0 +1,33 @@
+@import 'vars';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 32px;
+    color: $charcoalGrey;
+    background-color: $gray;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    #root {
+        display: flex;
+        min-width: 320px;
+        overflow: hidden;
+    }
+
+    a,
+    button {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    button,
+    input {
+        outline: none;
+        border: 0;
+    }
+}

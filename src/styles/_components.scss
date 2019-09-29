@@ -1,0 +1,38 @@
+@import 'vars';
+
+%container {
+    margin: 0 auto;
+    max-width: 1216px;
+    background-color: transparent;
+}
+
+%main-block {
+    box-shadow: $box-shadow-all;
+    border-radius: $border-radius;
+}
+
+%icon-wrap {
+    position: relative;
+    width: 16px;
+    height: 16px;
+
+    img,
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+%text-1 {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+%text-2 {
+    font-size: 13px;
+    line-height: 23px;
+}
